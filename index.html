@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hevo Ventures</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Hevo Ventures</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Airplane Bookings</li>
+        <li>Road Trips</li>
+        <li>Car Hire</li>
+        <li>Hotel Reservations</li>
+        <li>Site Visits</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Book Now</h2>
+      <form id="booking-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Booking Details" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="status-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: +254 701 064450 | hevoventures@gmail.com | Instagram: @hevo_ventures</p>
+  </footer>
+
+  <script>
+    emailjs.init("user_placeholder");
+    document.getElementById('booking-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      emailjs.sendForm('service_placeholder', 'template_placeholder', this)
+        .then(function() {
+          document.getElementById("status-message").innerText = "Booking sent successfully!";
+        }, function(error) {
+          document.getElementById("status-message").innerText = "Error sending booking.";
+        });
+    });
+  </script>
+</body>
+</html>
