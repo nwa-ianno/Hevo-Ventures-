@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hevo Ventures - Luxury Travel, Hotel Booking, and Tours in Kenya and Beyond" />
+    <meta name="keywords" content="Hevo Ventures, Travel Agency Kenya, Luxury Travel, Hotel Booking, Airplane Booking, Tours" />
+    <meta name="author" content="Hevo Ventures" />
+    <link rel="canonical" href="https://www.hevoventures.com/" />
+    <title>Hevo Ventures | Luxury Travel & Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Playfair Display', serif;
+      }
+      .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        background-color: #ff6a00;
+        color: white;
+        border-radius: 50%;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 50;
+      }
+      .scroll-to-top.visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-black text-white py-6 px-4 md:px-16 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Hevo Ventures</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#services" class="hover:text-orange-500 transition">Services</a>
+        <a href="#packages" class="hover:text-orange-500 transition">Packages</a>
+        <a href="#about" class="hover:text-orange-500 transition">About</a>
+        <a href="#gallery" class="hover:text-orange-500 transition">Gallery</a>
+        <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[80vh] flex items-center justify-center text-center text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="z-10 max-w-2xl">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Explore the World with Hevo Ventures</h2>
+        <p class="text-lg md:text-xl">Luxury travel, tailored experiences, and unforgettable memories.</p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 md:px-16 bg-gray-100">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-2">Airplane Bookings</h3>
+          <p>Seamless and reliable flight reservations for domestic and international travel.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-2">Road Trips</h3>
+          <p>Experience scenic getaways in style with our custom road trip packages.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-2">Luxury Accommodations</h3>
+          <p>Stay in premium hotels and lodges that offer unmatched comfort and class.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-2">Car Hire Services</h3>
+          <p>Hire well-maintained vehicles ranging from executive sedans to safari vans.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-2">Site Visits</h3>
+          <p>Explore Kenya’s most iconic attractions and hidden gems with expert guides.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-2">Group & Solo Tours</h3>
+          <p>From corporate retreats to solo getaways, we tailor trips to your needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 md:px-16 bg-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">About Hevo Ventures</h2>
+        <p class="text-lg text-gray-700">Hevo Ventures is a premier travel agency offering bespoke travel experiences, from luxury road trips to international flight bookings. We cater to elite travelers seeking comfort, class, and convenience in every journey.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 px-4 md:px-16 bg-gray-100">
+      <h2 class="text-4xl font-bold text-center mb-12">Gallery</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img src="https://source.unsplash.com/600x400/?kenya,nature" alt="Nature in Kenya" class="rounded-xl shadow" />
+        <img src="https://source.unsplash.com/600x400/?luxury,hotel" alt="Luxury hotel room" class="rounded-xl shadow" />
+        <img src="https://source.unsplash.com/600x400/?travel,adventure" alt="Adventure travel" class="rounded-xl shadow" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 md:px-16 bg-white">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+        <p class="text-lg mb-6">Ready to plan your next trip? Reach out to us via the form below or contact us directly.</p>
+        <form class="space-y-4 text-left">
+          <input type="text" placeholder="Full Name" class="w-full border border-gray-300 rounded-xl px-4 py-2" required />
+          <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded-xl px-4 py-2" required />
+          <textarea rows="4" placeholder="Message" class="w-full border border-gray-300 rounded-xl px-4 py-2" required></textarea>
+          <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-xl">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 text-center py-8">
+      <p>&copy; 2025 Hevo Ventures. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="mailto:hevoventures@gmail.com" class="hover:text-white">hevoventures@gmail.com</a> |
+        <a href="tel:+254701064450" class="hover:text-white">+254 701 064450</a> |
+        <a href="https://instagram.com/hevo_ventures" target="_blank" class="hover:text-white">@hevo_ventures</a>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top">&#8679;</button>
+
+    <script>
+      // Scroll to top
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      window.onscroll = () => {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.classList.add("visible");
+        } else {
+          scrollToTopBtn.classList.remove("visible");
+        }
+      };
+      scrollToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
+  </body>
+</html>
